@@ -7,7 +7,7 @@ np.set_printoptions(suppress=True)
 
 # Cargar modelo y etiquetas
 model = load_model("keras_model.h5", compile=False)
-class_names = open("labels.txt", "r").readlines()
+class_names = open("etiquetas.txt", "r").readlines()
 
 # Iniciar cámara
 cap = cv2.VideoCapture(0)
